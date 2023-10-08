@@ -30,7 +30,7 @@
                 ;
         };
 
-        arrow-fun: arrow-fun {
+        arrow_fun: arrow_fun {
             label = "arrow fun";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -42,7 +42,7 @@
                 ;
         };
 
-        tag-close: tag-close {
+        tag_close: tag_close {
             label = "tag close";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -98,8 +98,8 @@
 
                 lower_layer {
                         bindings = <
-   &trans &kp HASH  &kp DOLLAR &kp LBKT &kp RBKT &kp AMPS     &kp GRAVE &kp PLUS  &kp UNDER &tag-close     &trans    &trans
-   &trans &kp EXCL  &kp AT     &kp LPAR &kp RPAR &arrow-fun   &kp TILDE &kp EQUAL &kp MINUS &kp STAR       &kp COLON &kp DQT
+   &trans &kp HASH  &kp DOLLAR &kp LBKT &kp RBKT &kp AMPS     &kp GRAVE &kp PLUS  &kp UNDER &tag_close     &trans    &trans
+   &trans &kp EXCL  &kp AT     &kp LPAR &kp RPAR &arrow_fun   &kp TILDE &kp EQUAL &kp MINUS &kp STAR       &kp COLON &kp DQT
    &trans &kp PRCNT &kp CARET  &kp LBRC &kp RBRC &kp BSLH     &kp PIPE2 &kp LT    &kp GT    &kp QMARK      &trans    &trans
                                &trans   &trans   &trans       &trans    &trans    &trans
                         >;
