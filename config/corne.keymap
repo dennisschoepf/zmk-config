@@ -1,15 +1,15 @@
-#define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define SYS     3
-#define LOCK    4
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
+
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+#define SYS     3
+#define LOCK    4
 
 / {
     macros {
@@ -86,7 +86,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P         &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &mt LALT SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH      &tmux
-         &sk LSHIFT &mo LOWER &mt LGUI RET   &mt CTRL SPACE &mo RAISE &kp BSPC
+          &sk LSHFT &mo LOWER &mt LGUI RET   &mt CTRL SPACE &mo RAISE &kp BSPC
                         >;
                 };
 
