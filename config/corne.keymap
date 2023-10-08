@@ -12,11 +12,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-        /* Turn LED power off completely */
-        &ext_power EP_OFF
-        &bl BL_OFF
-        &rgb_ug RGB_OFF
-
         keymap {
                 compatible = "zmk,keymap";
 
