@@ -11,6 +11,12 @@
 #define SYS     3
 #define LOCK    4
 
+&mt {
+    quick-tap-ms = <100>;
+    tapping-term-ms = <220>;
+    flavor = "tap-preferred";
+};
+
 / {
     macros {
         tmux: tmux {
@@ -83,9 +89,9 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &tmux
+   &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P         &kp BSPC
+   &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &mt LALT SEMI &kp SQT
+   &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH      &tmux
               &sk LSHFT &mo LOWER &mt LGUI RET   &mt LCTRL SPACE &mo RAISE &kp BSPC
                         >;
                 };
@@ -110,9 +116,9 @@
 
                 sys_layer {
                         bindings = <
-   &trans     &kp H        &trans       &trans       &trans       &trans         &trans &trans &trans &trans &trans &ext_power EP_TOG
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans &trans &trans &trans &bl BL_OFF
-   &trans     &trans       &trans       &trans       &trans       &trans         &trans &trans &trans &trans &trans &rgb_ug RGB_OFF
+   &trans     &kp H        &trans       &trans       &trans       &trans         &trans       &trans &trans &trans &trans &ext_power EP_TOG
+   &trans     &trans       &trans       &trans       &trans       &trans         &trans       &trans &trans &trans &trans &rgb_ug RGB_OFF
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &out OUT_TOG &trans &trans &trans &trans &bl BL_OFF
                                         &trans       &trans       &trans         &trans &trans &trans
                         >;
                 };
@@ -124,6 +130,6 @@
    &none &none  &none &none &none &none   &none &none &none &none &none  &none
                       &none &none &none   &none &none &none
                         >;
-                };
+                }
         };
-};
+}
