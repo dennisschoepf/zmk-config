@@ -36,11 +36,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp EQUAL>
-                , <&macro_tap &kp GT>
-                , <&macro_tap &kp SPACE>
-                , <&macro_tap &kp LBRC>
-                ;
+                = <&kp LPAR &kp RPAR &kp EQUAL &kp SPACE>;
         };
 
         tag_close: tag_close {
@@ -48,9 +44,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp FSLH>
-                , <&macro_tap &kp GT>
-                ;
+                = <&kp FSLH &kp GT>;
         };
 
     };
@@ -92,7 +86,7 @@
                         bindings = <
    &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P         &kp BSPC
    &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &mt LALT SEMI &kp SQT
-   &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH      &tmux
+   &kp LGUI      &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH      &tmux
               &sk LSHFT &mo LOWER &mt LGUI RET   &mt LCTRL SPACE &mo RAISE &kp BSPC
                         >;
                 };
@@ -108,10 +102,10 @@
 
                 lower_layer {
                         bindings = <
-   &trans &trans &kp N7 &kp N8 &kp N9 &trans   &trans   &trans   &trans &trans    &trans &trans
-   &trans &trans &kp N4 &kp N5 &kp N6 &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &trans &kp N0 &kp N1 &kp N2 &kp N3 &trans   &trans   &trans   &trans &trans    &trans &trans
-                        &trans &trans &trans   &trans   &trans   &trans
+   &trans &trans &kp N7 &kp N8 &kp N9 &trans   &trans    &trans    &trans    &trans    &trans    &trans
+   &trans &trans &kp N4 &kp N5 &kp N6 &trans   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
+   &trans &kp N0 &kp N1 &kp N2 &kp N3 &trans   &kp LG(1) &kp LG(2) &kp LG(3) &kp LG(4) &kp LG(5) &trans
+                        &trans &trans &trans   &trans &trans &trans
                         >;
                 };
 
