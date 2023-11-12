@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp LPAR &kp RPAR &kp EQUAL &kp SPACE>;
+                = <&kp LPAR &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE>;
         };
 
         tag_close: tag_close {
