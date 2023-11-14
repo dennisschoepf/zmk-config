@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp LPAR &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE>;
+                = <&kp EQUAL &kp GT &kp SPACE>;
         };
 
         tag_close: tag_close {
@@ -135,7 +135,7 @@
                         bindings = <
    &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P         &kp BSPC
    &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &mt LALT SEMI &kp SQT
-   &kp LGUI      &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH      &tmux
+   &kp LGUI      &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH      &kp LC(B)
               &sk LSHFT &mo LOWER &mt LGUI RET   &mt LCTRL SPACE &mo RAISE &kp BSPC
                         >;
                 };
