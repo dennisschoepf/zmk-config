@@ -20,14 +20,63 @@
 
 / {
     macros {
-        tmux: tmux {
+        tmux_one: tmux_one {
             label = "tmux prefix";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp B>
-                , <&macro_release &kp LCTRL>
+                = <&macro_tap &kp LC(B)>
+                , <&macro_tap &kp NUMBER_1>
+                ;
+        };
+
+        tmux_two: tmux_two {
+            label = "tmux prefix";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(B)>
+                , <&macro_tap &kp NUMBER_2>
+                ;
+        };
+
+        tmux_three: tmux_three {
+            label = "tmux prefix";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(B)>
+                , <&macro_tap &kp NUMBER_3>
+                ;
+        };
+
+        tmux_four: tmux_four {
+            label = "tmux prefix";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(B)>
+                , <&macro_tap &kp NUMBER_4>
+                ;
+        };
+
+        tmux_five: tmux_five {
+            label = "tmux prefix";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(B)>
+                , <&macro_tap &kp NUMBER_5>
+                ;
+        };
+
+        tmux_six: tmux_six {
+            label = "tmux prefix";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(B)>
+                , <&macro_tap &kp NUMBER_6>
                 ;
         };
 
@@ -102,7 +151,7 @@
 
                 lower_layer {
                         bindings = <
-   &trans &trans &kp N7 &kp N8 &kp N9 &trans   &trans           &trans           &trans           &trans           &trans           &trans
+   &trans &trans &kp N7 &kp N8 &kp N9 &trans   &tmux_one        &tmux_two        &tmux_three      &tmux_four       &tmux_five       &tmux_six
    &trans &trans &kp N4 &kp N5 &kp N6 &trans   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &trans           &trans
    &trans &kp N0 &kp N1 &kp N2 &kp N3 &trans   &kp LG(NUMBER_1) &kp LG(NUMBER_2) &kp LG(NUMBER_3) &kp LG(NUMBER_4) &kp LG(NUMBER_5) &trans
                         &trans &trans &trans   &trans &trans &trans
